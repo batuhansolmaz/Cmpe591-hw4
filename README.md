@@ -3,21 +3,7 @@ Course documents for CMPE591
 
 ## Homework 4: Learning from Demonstration with CNMPs
 
-This homework implements a Conditional Neural Movement Primitive (CNMP) model that learns to predict robot movements based on demonstrations. The CNMP model extends the Neural Process framework by incorporating a condition that modifies the decoder, enabling more flexible and context-aware predictions.
 
-### Project Overview
-
-The CNMP model is trained on trajectory data collected from a simulated UR5e robot arm. The robot randomly moves its end-effector in the y-z plane, sometimes hitting an object and sometimes not. The model learns to predict both the end-effector and object positions given time points and the height of the object as a condition.
-
-### Dataset
-
-The dataset consists of:
-- Time points (t)
-- End-effector coordinates (ey, ez)
-- Object coordinates (oy, oz)
-- Object height (h)
-
-The model is trained to predict the end-effector and object positions at any time point, conditioned on the object's height.
 
 ### Model Architecture
 
